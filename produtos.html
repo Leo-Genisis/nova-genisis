@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Nova Genisis</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/funcoes.js">
+        
+    </script>
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html"><img width="80px"src="./imagens/logo.png" alt="logo"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre_nos.html">Sobre Nós </a>
+        <a href="contato.html">Contato</a>  
+    </nav>
+    <h2>Produtos</h2>
+    <h3>Categorias</h3>
+    
+    <section class="categoria">
+        <ul>
+            <li onclick="exibirTodos()">Todos(4)</li>
+            <li onclick="exibirCategoria('desenvolvimento')">Desenvolvimento(2)</li>
+            <li onclick="exibirCategoria('manutencao')">Manutenção(2)</li>
+        </ul>
+
+    </section>
+    <section class="produtos">
+        <div class="box_produto" id="desenvolvimento" style="display:block">
+            <img src="./imagens/desenvolvimento_web.jpg" alt="dev_web" width="200px" onmouseenter="destaque(this)" onmouseout="miniatura(this)">
+            <p class="descricao"><b>Desenvolvimento Web</b></p>
+            <p class="preco">R$ 1.000,00</p>
+        </div>
+        <div class="box_produto" id="desenvolvimento" style="display:block">
+            <img src="./imagens/desenvolvimento_mobile.png" alt="dev_mobile" width="200px" onmousemove="destaque(this)" onmouseout="miniatura(this)">
+            <p class="descricao"><b>Desencolvimento Mobile</b></p>
+            <p class="preco">R$ 2.000,00</p>
+        </div>
+        <div class="box_produto" id="manutencao" style="display:block">
+            <img src="./imagens/banco_de_dados.png" alt="manut_dados" width="200px" onmousemove="destaque(this)" onmouseout="miniatura(this)">
+            <p class="descricao"><b>Manutenção de baco de dados</b></p>
+            <p class="preco">R$ 300,00 (mês)</p>
+        </div>
+        <div class="box_produto" id="manutencao" style="display:block">
+            <img src="./imagens/redes.jpg" alt="manut_redes" width="200px" onmousemove="destaque(this)" onmouseout="miniatura(this)">
+            <p class="descricao"><b>Manutenção de Redes</b></p>
+            <p class="preco">R$ 350,00 (mês)</p>
+        </div>
+    </section>
+</body>
+</html>
